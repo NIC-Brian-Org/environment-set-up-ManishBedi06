@@ -1,29 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Multiplication Calculator</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
   </head>
   <body>
     <header>
-      <h1>DGL 213 Caluclator</h1>
-      <p>Multiplication</p>
+      <h1>DGL 213 Calculator</h1>
+      <p>Addition, Subtraction, Multiplication, and Division</p>
     </header>
-  
     <main>
-      <input type="text" id="multiplier" value="2">
-      X 
-      <input type="text" id="multiplicand" value="2">
-      = 
-      <span id="product">4</span>
+      <input type="text" id="first" value="0" />
+      <select id="operation">
+        <option value="*">x</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">÷</option>
+      </select>
+      <input type="text" id="second" value="0" />
+      =
+      <span id="result">4</span>
     </main>
-  
     <footer>
       <p>Multiplication Calculator.</p>
     </footer>
-
     <script src="main.js"></script>
   </body>
 </html>
